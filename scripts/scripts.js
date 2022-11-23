@@ -35,6 +35,22 @@ function updateimg(){
 
 clickButton.addEventListener('click', updateimg)
 
+const buttonContainer = document.querySelector('div.button-container')
+
+
+function changeBGgreen(e){
+    e.target.classList.add('backgroundGreen')
+}
+
+function changeBTcolor(e){
+    e.target.style.color = e.target.textContent
+}
+
+buttonContainer.addEventListener('mouseover', changeBGgreen)
+buttonContainer.addEventListener('click', changeBTcolor)
+
+
+
 
 
 
